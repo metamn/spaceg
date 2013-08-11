@@ -1,0 +1,88 @@
+/* The color scheme
+*/
+
+
+$color: #f1f1f1;
+$background: #363636;
+
+$pink: #F3AAAA;
+$brown: #714F4F;
+$gray: #BEBEBE;
+
+$border: darken($background, 2%);
+$caption: lighten($color, 20%);
+
+
+
+body {
+  background: $background;
+  color: $color;
+  
+  a {
+    color: $brown;
+    text-decoration: none;
+    
+    &:hover {
+      color: $color;
+      text-decoration: underline;
+    }
+  }
+  
+  
+  .container {
+    
+    #header {
+      //background: image-url("background.jpg") no-repeat 0 0 $gray;
+      //background-size: cover;
+    }
+    
+    
+    
+    #content {
+      background: $background;
+      
+      article {
+        @include text;
+        
+        ol {
+          @include list($border);
+        }
+        
+        ul {
+          li {
+            margin-bottom: $pad;
+          }
+        }
+        
+        figure {
+          margin: $pad 0;
+          border: 1px outset $gray;
+          background: white;
+          
+          img {
+            padding: $pad*3;
+          }
+          
+          figcaption {
+            font-size: smaller;
+            font-weight: 300;
+            
+            position: relative;
+            top: -$pad*2;
+            margin-left: $pad*3 + $pad/2;
+          }
+        }
+        
+        q, blockquote {
+	        background: $color;
+	        color: $background;
+        }
+    
+      }
+    } 
+    
+  }
+}
+
+
+  
