@@ -86,32 +86,28 @@ body .container input[type='checkbox']:checked + label:before { content: '\2611'
 body .container select { border-bottom: 1px solid gray; cursor: pointer; width: 100%; }
 body .container label.select:after { content: '\003E'; float: right; display: inline-block; padding: 0 .45em; position: relative; left: 0; background: white; pointer-events: none; /* this is a must */ cursor: pointer; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); }
 
-body .container { width: 100%; margin: 0 auto; }
-body .container #header, body .container #content, body .container #footer { width: 100%; float: left; }
-body .container #header #video { width: 100%; float: left; position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
-body .container #header #video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-body .container #header hgroup { width: 61.804%; margin: 19.098%; position: relative; top: -7.5em; }
-body .container #content article { width: 61.804%; margin-left: 19.098%; }
-body .container #footer { width: 61.804%; margin-left: 19.098%; }
+/* Set all parents to full height */
+html, body, .container, #content, #content section { height: 100%; }
 
-/* The color scheme
-*/
-body { background: #363636; color: #f1f1f1; }
-body a { color: #714f4f; text-decoration: none; }
-body a:hover { color: #f1f1f1; text-decoration: underline; }
-body .container #content { background: #363636; }
-body .container #content article { line-height: 1.5; max-width: 600px; /* On large screen images can be wider than 600px 
-*/ /* Tables must be responsive
-*/ }
-@media only screen and (min-width: 1025px) { body .container #content article figure { display: inline-block; max-width: 65em; } }
-@media (max-width: 380px) { body .container #content article table td, body .container #content article table tr, body .container #content article table th { font-size: small; } }
-@media only screen and (max-width: 767px) { body .container #content article table td, body .container #content article table tr, body .container #content article table th { padding: 0.3125em; } }
-body .container #content article ol li { border-bottom: 1px solid #313131; }
-body .container #content article ul li { margin-bottom: 1.25em; }
-body .container #content article figure { margin: 1.25em 0; border: 1px outset #bebebe; background: white; }
-body .container #content article figure img { padding: 3.75em; }
-body .container #content article figure figcaption { font-size: smaller; font-weight: 300; position: relative; top: -2.5em; margin-left: 4.375em; }
-body .container #content article q, body .container #content article blockquote { background: #f1f1f1; color: #363636; }
+body .container { /* background-attachment does the trick */ }
+body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+body .container #content section#intro #video { width: 100%; float: left; position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+body .container #content section#intro #video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+body .container #content section article ul { margin: 0; }
+
+body .container #header hgroup { width: 61.804%; margin: 19.098%; position: relative; top: -7.5em; }
+
+#intro { background-image: url('/assets/1.jpg?1376229013'); }
+
+#press { background-image: url('/assets/1.jpg?1376229013'); }
+
+#features { background-image: url('/assets/1.jpg?1376229013'); }
+
+#specifications { background-image: url('/assets/2.png?1376230065'); }
+
+#order { background-image: url('/assets/3.png?1376230258'); }
+
+#showcase { background-image: url('/assets/4.png'); }
 
 .outline { display: none; }
 

@@ -1,30 +1,55 @@
 
+/* Set all parents to full height */
+html, body, .container, #content, #content section {
+  height: 100%;
+}
+
+
 body {
   .container {
-    width: 100%;
-    margin: 0 auto;
-    
-    #header, #content, #footer {
-      @include block;
+    /* background-attachment does the trick */
+    #content {
+      section {
+        position: relative;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        &#intro {
+          #video {
+            @include block;
+            
+            position: relative;
+	          padding-bottom: 56.25%; /* 16:9 */
+	          padding-top: 25px;
+	          height: 0;
+	          
+	          iframe {
+	            position: absolute;
+	            top: 0;
+	            left: 0;
+	            width: 100%;
+	            height: 100%;
+	          }
+          }
+        }
+        
+        article {
+          ul {
+            margin: 0;
+          }
+        }
+      }
     }
+  }
+}
+
+body {
+  .container {
     
     #header {
-      #video {
-        @include block;
-        
-        position: relative;
-	      padding-bottom: 56.25%; /* 16:9 */
-	      padding-top: 25px;
-	      height: 0;
-	      
-	      iframe {
-	        position: absolute;
-	        top: 0;
-	        left: 0;
-	        width: 100%;
-	        height: 100%;
-	      }
-      }
+      
       
       hgroup {
         width: $major;
@@ -35,17 +60,7 @@ body {
       }
     }
     
-    #content {
-      article {
-        width: $major;
-        margin-left: $margin;
-      }
-    }
     
-    #footer {
-      width: $major;
-      margin-left: $margin;
-    }
   }
 }
 
