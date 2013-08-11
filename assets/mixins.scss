@@ -122,4 +122,21 @@ $breakpoint-a4-height: 1122.51px !default;
 }
 
 
+/* list, inline 
+*/
+@mixin list-inline {
+  display: block;
+  margin: 0;
+  li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 0;
+    float: left;
+    margin-right: $pad;
+  }
+  li.last {
+    margin-right: 0;
+  }
+}
+
 

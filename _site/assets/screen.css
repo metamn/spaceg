@@ -33,9 +33,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* Site specific mixins
 */
+/* list, inline 
+*/
 /* Body text style
 */
-body { font-size: 125%; line-height: 1.25; font-family: 'Lato', sans-serif; }
+body { font-size: 125%; line-height: 1.25; font-family: 'Lato', sans-serif; font-weight: 300; }
 body .container { /* Block level elements
 // -----------------------------------------------
 */ /* the second <p> has a top margin */ /* blockquote is colors inverted */ /* address is small caps */ /* Lists
@@ -54,9 +56,7 @@ body .container { /* Block level elements
 body .container h1, body .container h2, body .container h3 { margin-top: 0; font-size: 1.16667em; margin-bottom: 0; }
 body .container h1, body .container h2 { padding: 1.51785em 0; }
 body .container h3 { padding: 1.51786em 0; }
-body .container h1 { font-weight: 900; }
-body .container h2 { font-weight: 700; }
-body .container h3 { font-weight: normal; }
+body .container h1, body .container h2, body .container h3 { font-weight: normal; }
 body .container p + p { margin-top: 1.25em; }
 body .container q, body .container blockquote { display: block; margin: 2.5em 0; padding: 1.25em; background: black; color: white; }
 body .container address { font-variant: small-caps; }
@@ -90,24 +90,23 @@ body .container label.select:after { content: '\003E'; float: right; display: in
 html, body, .container, #content, #content section { height: 100%; }
 
 body .container { /* background-attachment does the trick */ }
+body .container #header { width: 100%; float: left; }
+body .container #header hgroup { width: 61.804%; margin-left: 19.098%; position: fixed; z-index: 1; bottom: 1.25em; }
 body .container #content section { position: relative; background-position: top center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
+body .container #content section#intro { /* Full screen video */ }
 body .container #content section#intro #video { width: 100%; float: left; position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
 body .container #content section#intro #video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-body .container #content section article ul { margin: 0; }
+body .container #content section article { margin-left: 19.098%; }
+body .container #content section article ul { margin: 0; list-style: none; }
 
-body .container #header hgroup { width: 61.804%; margin: 19.098%; position: relative; top: -7.5em; }
-
-#intro { background-image: url('/assets/1.jpg?1376229013'); }
-
-#press { background-image: url('/assets/1.jpg?1376229013'); }
-
-#features { background-image: url('/assets/1.jpg?1376229013'); }
-
-#specifications { background-image: url('/assets/2.png?1376230065'); }
-
-#order { background-image: url('/assets/3.png?1376230258'); }
-
-#showcase { background-image: url('/assets/4.png'); }
+body { color: #f1f1f1; }
+body .container #content section#intro { background-image: url('/assets/1.jpg?1376229013'); }
+body .container #content section#press { background-image: url('/assets/1.jpg?1376229013'); }
+body .container #content section#press article { float: right; }
+body .container #content section#features { background-image: url('/assets/1.jpg?1376229013'); }
+body .container #content section#specifications { background-image: url('/assets/2.png?1376230065'); }
+body .container #content section#order { background-image: url('/assets/3.png?1376230258'); }
+body .container #content section#showcase { background-image: url('/assets/4.png?1376230551'); }
 
 .outline { display: none; }
 

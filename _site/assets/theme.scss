@@ -1,26 +1,50 @@
 
 
- 
-#intro {
-  background-image: image-url("1.jpg");
-}
- 
-#press { 
-  background-image: image-url("1.jpg");
-}
- 
-#features {
-  background-image: image-url("1.jpg");
-}
- 
-#specifications {
-  background-image: image-url("2.png");
-}
- 
-#order {
-  background-image: image-url("3.png");
-}
+$background: #000;
+$color: #f1f1f1;
 
-#showcase {
-  background-image: image-url("4.png");
+
+body {
+  color: $color;
+  
+  
+  .container {
+    #header {
+      
+    }
+    
+    #content {
+      section {
+        &#intro {
+          background-image: image-url("1.jpg");
+        }
+         
+        &#press { 
+          background-image: image-url("1.jpg");
+          
+          article {
+            float: right;
+          }
+        }
+         
+        &#features {
+          background-image: image-url("1.jpg");
+        }
+         
+        &#specifications {
+          background-image: image-url("2.png");
+        }
+         
+        &#order {
+          background-image: image-url("3.png");
+        }
+
+        &#showcase {
+          background-image: image-url("4.png");
+        }
+      }
+    }
+  }
 }
+ 
+

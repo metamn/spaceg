@@ -7,6 +7,21 @@ html, body, .container, #content, #content section {
 
 body {
   .container {
+  
+    #header {
+      @include block;
+      
+      hgroup {
+        width: $major;
+        margin-left: $margin;
+        
+        position: fixed;
+        z-index: 1;
+        
+        bottom: $pad;
+      }
+    }
+  
     /* background-attachment does the trick */
     #content {
       section {
@@ -17,6 +32,8 @@ body {
         background-attachment: fixed;
         
         &#intro {
+        
+          /* Full screen video */
           #video {
             @include block;
             
@@ -36,35 +53,17 @@ body {
         }
         
         article {
+          margin-left: $margin;
+          
           ul {
             margin: 0;
+            list-style: none;
           }
         }
       }
     }
   }
 }
-
-body {
-  .container {
-    
-    #header {
-      
-      
-      hgroup {
-        width: $major;
-        margin: $margin;
-        
-        position: relative;
-        top: -$pad*6;
-      }
-    }
-    
-    
-  }
-}
-
-
 
 
 
