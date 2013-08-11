@@ -16,11 +16,11 @@ body {
     #content {
       section {
         &#intro {
-          background-image: image-url("1.jpg");
+          background-image: url(http://metamn.github.io/spaceg/assets/1.jpg);
         }
          
         &#press { 
-          background-image: image-url("1.jpg");
+          background-image: url(http://metamn.github.io/spaceg/assets/1.jpg);
           
           article {
             float: right;
@@ -28,19 +28,19 @@ body {
         }
          
         &#features {
-          background-image: image-url("1.jpg");
+          background-image: url(http://metamn.github.io/spaceg/assets/1.jpg);
         }
          
         &#specifications {
-          background-image: image-url("2.png");
+          background-image: url(http://metamn.github.io/spaceg/assets/2.png);
         }
          
         &#order {
-          background-image: image-url("3.png");
+          background-image: url(http://metamn.github.io/spaceg/assets/3.png);
         }
 
         &#showcase {
-          background-image: image-url("4.png");
+          background-image: url(http://metamn.github.io/spaceg/assets/4.png);
         }
       }
     }

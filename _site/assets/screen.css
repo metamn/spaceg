@@ -100,13 +100,13 @@ body .container #content section article { margin-left: 19.098%; }
 body .container #content section article ul { margin: 0; list-style: none; }
 
 body { color: #f1f1f1; }
-body .container #content section#intro { background-image: url('http://metamn.github.io/spaceg/assets/1.jpg?1376229013'); }
-body .container #content section#press { background-image: url('http://metamn.github.io/spaceg/assets/1.jpg?1376229013'); }
+body .container #content section#intro { background-image: url(http://metamn.github.io/spaceg/assets/1.jpg); }
+body .container #content section#press { background-image: url(http://metamn.github.io/spaceg/assets/1.jpg); }
 body .container #content section#press article { float: right; }
-body .container #content section#features { background-image: url('http://metamn.github.io/spaceg/assets/1.jpg?1376229013'); }
-body .container #content section#specifications { background-image: url('http://metamn.github.io/spaceg/assets/2.png?1376230065'); }
-body .container #content section#order { background-image: url('http://metamn.github.io/spaceg/assets/3.png?1376230258'); }
-body .container #content section#showcase { background-image: url('http://metamn.github.io/spaceg/assets/4.png?1376230551'); }
+body .container #content section#features { background-image: url(http://metamn.github.io/spaceg/assets/1.jpg); }
+body .container #content section#specifications { background-image: url(http://metamn.github.io/spaceg/assets/2.png); }
+body .container #content section#order { background-image: url(http://metamn.github.io/spaceg/assets/3.png); }
+body .container #content section#showcase { background-image: url(http://metamn.github.io/spaceg/assets/4.png); }
 
 .outline { display: none; }
 
