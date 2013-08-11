@@ -4,7 +4,7 @@
 http_path = "/"
 css_dir = "assets"
 sass_dir = "assets"
-images_dir = "assets"
+images_dir = "http://metamn.github.io/spaceg/assets"
 javascripts_dir = "assets"
 fonts_dir = "assets"
 
